@@ -55,6 +55,32 @@ body {
 	padding: 50px 25px;
 	z-index: 1;
 	overflow: hidden;
+	margin: 0 30px;
+}
+
+.main .card2{
+	overflow: visible;
+}
+.main .card2::before{
+	position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(140deg, #6eff00, #ff0047);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    filter: blur(50px) hue-rotate(0deg);
+  }
+
+  100% {
+    filter: blur(50px) hue-rotate(360deg);
+  }
 }
 
 .main .card h1{
